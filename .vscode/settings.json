@@ -1,0 +1,16 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\youse\\Desktop\\javafx-sdk-18.0.1\\lib\\javafx.base.jar",
+        "c:\\Users\\youse\\Desktop\\javafx-sdk-18.0.1\\lib\\javafx.controls.jar",
+        "c:\\Users\\youse\\Desktop\\javafx-sdk-18.0.1\\lib\\javafx.fxml.jar",
+        "c:\\Users\\youse\\Desktop\\javafx-sdk-18.0.1\\lib\\javafx.graphics.jar",
+        "c:\\Users\\youse\\Desktop\\javafx-sdk-18.0.1\\lib\\javafx.media.jar",
+        "c:\\Users\\youse\\Desktop\\javafx-sdk-18.0.1\\lib\\javafx.swing.jar",
+        "c:\\Users\\youse\\Desktop\\javafx-sdk-18.0.1\\lib\\javafx.web.jar",
+        "c:\\Users\\youse\\Desktop\\javafx-sdk-18.0.1\\lib\\javafx-swt.jar",
+        "c:\\Users\\youse\\Desktop\\mysql-connector-j-8.1.0.jar"
+    ]
+}
