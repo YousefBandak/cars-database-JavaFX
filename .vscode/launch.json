@@ -7,7 +7,7 @@
         {
             "type": "java",
             "name": "DataBaseGUI",
-            "vmArgs": "--module-path C:\\Users\\youse\\Desktop\\javafx-sdk-18.0.1\\lib --add-modules javafx.controls,javafx.fxml",
+            "vmArgs": "--module-path javafx-sdk-18.0.1\\lib --add-modules javafx.controls,javafx.fxml",
             "request": "launch",
             "mainClass": "DataBaseGUI",
             "projectName": "carsDB_ed4352ed"
