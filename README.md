@@ -37,7 +37,46 @@ c = DriverManager.getConnection("jdbc:mysql://localhost:3306/cars", "root", "");
 Replace `"root"` and the empty string with your database username and password.
 
 ### 4. Configure IDE
-After cloning the repository, navigate to the `.vscode` folder and open the `launch.json` file. Copy all of the `vmArgs` from the second configuration and paste them into the first configuration. This will ensure that the application has all necessary JVM arguments set when launched.
+
+--VSCODE:
+After cloning the repository, navigate to the `.vscode` folder and open the `launch.json` file. Copy all of the `vmArgs` from where it's present in the configurations and paste where it's not present in any configurations.
+
+the second configuration and paste them into the first configuration. This will ensure that the application has all necessary JVM arguments set when launched.
+
+
+### IntelliJ IDEA Setup Instructions
+
+#### Step 1: Import the Project
+- Open IntelliJ IDEA.
+- Select 'Import Project' and choose the project directory where you cloned the repository.
+- IntelliJ will detect the existing sources. Choose 'Import project from external model' and select 'Gradle', 'Maven', or just 'Java' if it's a simple Java project.
+
+#### Step 2: Configure the JDK
+- Go to 'File > Project Structure' (Ctrl+Alt+Shift+S).
+- Under 'Project Settings', select 'Project'.
+- From the 'Project SDK' dropdown, select your JDK version (JDK 11 or higher). If it’s not listed, click 'New' and specify the path to the JDK.
+
+#### Step 3: Add JavaFX SDK as a Library
+- Still in the 'Project Structure', go to 'Libraries'.
+- Click the '+' button and select 'Java'.
+- Navigate to the JavaFX SDK 'lib' folder on your system and select it.
+- Click 'OK' to add it as a library and then 'Apply'.
+
+#### Step 4: Configure Run/Debug Configuration
+- Go to 'Run > Edit Configurations'.
+- Click the '+' to add a new configuration and select 'Application'.
+- In the 'Name' field, give a name to your configuration, like 'DatabaseGUI'.
+- In the 'Main Class' field, specify the main class (e.g., 'DataBaseGUI').
+- Click on 'Modify options' and select 'Add VM options'.
+- In the 'VM options' field, input:
+  ```
+  --module-path .vscode\\javafx-sdk-18.0.1\\lib --add-modules javafx.controls,javafx.fxml
+  ```
+- Click 'OK' to save the configuration.
+
+#### Step 5: Run the Application
+- Select the run configuration you just created from the dropdown menu in the toolbar.
+- Click the 'Run' button (Shift + F10) to start the application.
 
 ### 5. Run the Application
 Now, you can run the `DataBaseGUI.java` file in your IDE to start the application. Ensure that your database server is running before you launch the application.
