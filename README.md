@@ -36,14 +36,14 @@ c = DriverManager.getConnection("jdbc:mysql://localhost:3306/cars", "root", "");
 ```
 Replace `"root"` and the empty string with your database username and password.
 
-### 4. Run the Application
+### 4. Configure IDE
+After cloning the repository, navigate to the `.vscode` folder and open the `launch.json` file. Copy all of the `vmArgs` from the second configuration and paste them into the first configuration. This will ensure that the application has all necessary JVM arguments set when launched.
+
+### 5. Run the Application
 Now, you can run the `DataBaseGUI.java` file in your IDE to start the application. Ensure that your database server is running before you launch the application.
 
 ## Troubleshooting
 If you encounter connection issues, check your database username and password. Make sure your MySQL server is running and that the `cars` database exists and is populated correctly. If errors persist, check the MySQL server logs for more details.
-
-## Contributing
-Feel free to fork this repository and submit pull requests to contribute to the development of this application.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
