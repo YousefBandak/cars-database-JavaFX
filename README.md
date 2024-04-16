@@ -40,11 +40,7 @@ Replace `"root"` and the empty string with your database username and password.
 
 ### VSCODE Setup Instructions
 
---VSCODE:
 After cloning the repository, navigate to the `.vscode` folder and open the `launch.json` file. Copy all of the `vmArgs` from where it's present in the configurations and paste where it's not present in any configurations.
-
-the second configuration and paste them into the first configuration. This will ensure that the application has all necessary JVM arguments set when launched.
-
 
 ### IntelliJ IDEA Setup Instructions
 
