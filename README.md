@@ -72,9 +72,21 @@ After cloning the repository, navigate to the `.vscode` folder and open the `lau
   ```
 - Click 'OK' to save the configuration.
 
-#### Step 5: Run the Application
-- Select the run configuration you just created from the dropdown menu in the toolbar.
-- Click the 'Run' button (Shift + F10) to start the application.
+### Eclipse Setup Instructions
+
+#### Step 1: Import the Project
+- Open Eclipse and go to 'File > Import'.
+- Choose 'General > Projects from Folder or Archive'.
+- Navigate to the directory where you cloned the repository and import the project.
+
+#### Step 2: Add VM Arguments
+- Go to 'Run > Run Configurations'.
+- Create a new run configuration for your Java Application.
+- On the 'Arguments' tab, in the 'VM arguments' section, add the following:
+  ```
+  --module-path ".vscode/javafx-sdk-18.0.1/lib" --add-modules javafx.controls,javafx.fxml
+  ```
+- Click 'Apply' to save the configuration.
 
 ### 5. Run the Application
 Now, you can run the `DataBaseGUI.java` file in your IDE to start the application. Ensure that your database server is running before you launch the application.
