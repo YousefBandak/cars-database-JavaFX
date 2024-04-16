@@ -38,6 +38,8 @@ Replace `"root"` and the empty string with your database username and password.
 
 ### 4. Configure IDE
 
+### VSCODE Setup Instructions
+
 --VSCODE:
 After cloning the repository, navigate to the `.vscode` folder and open the `launch.json` file. Copy all of the `vmArgs` from where it's present in the configurations and paste where it's not present in any configurations.
 
