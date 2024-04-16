@@ -57,7 +57,7 @@ After cloning the repository, navigate to the `.vscode` folder and open the `lau
 #### Step 3: Add JavaFX SDK as a Library
 - Still in the 'Project Structure', go to 'Libraries'.
 - Click the '+' button and select 'Java'.
-- Navigate to the JavaFX SDK 'lib' folder on your system and select it.
+- Navigate to the JavaFX SDK 'lib' folder in the '.vscode/javafx-sdk-18.0.1'.
 - Click 'OK' to add it as a library and then 'Apply'.
 
 #### Step 4: Configure Run/Debug Configuration
